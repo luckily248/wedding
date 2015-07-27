@@ -9,7 +9,20 @@ type MainController struct {
 }
 
 func (c *MainController) Get() {
-	c.Data["Website"] = "beego.me"
-	c.Data["Email"] = "astaxie@gmail.com"
+
 	c.TplNames = "index.tpl"
+}
+type WeddingpicController struct {
+	beego.Controller
+}
+
+func (c *WeddingpicController) Get() {
+	c.TplNames = "weddingpic.tpl"
+}
+type ProposingController struct {
+	beego.Controller
+}
+
+func (c *ProposingController) Get() {
+	c.TplNames = "proposing.tpl"
 }
