@@ -1,79 +1,40 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-   <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1 ,maximum-scale=1, user-scalable=no" >
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
-    <title>梁智颖 & 邹佳丽</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <!--<link href="dashboard.css" rel="stylesheet">-->
-</head>
+{{template "header.html" .}}
 <body>
-<div class="container bg-danger" >
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-				<div class="navbar-header">
-					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> 
-					<a class="navbar-brand" href="/">主页</a>
+<h3 class="invisible">已经到顶部</h3>
+ <div class="container-fluid " style="background-image: url(./static/img/bk2.jpg)">
+	<div class="row clearfix" >
+		<div class="col-xs-12 col-md-5 column">
+			<img src="./static/img/heart2.jpg" class="img-thumbnail img-responsive" alt="Responsive image">
+			</img>
+			<div class="bg-danger">
+				<img class="img-responsive img-thumbnail" alt="" src="./static/img/heart.jpg" />
+				<div class="carousel-caption">
+				<h3 class="text-center text-danger">
+					梁智颖&邹佳丽
+				</h23>
+				<h3 class="text-center text-danger">
+					 华夏大酒店
+				</h3>
+				<p>
+					               
+				</p>
+				<h3 class="text-left text-muted">
+					 2015年10月2日 
+				</h3>
+				<h3 class="text-left text-muted">
+					 6:00
+				</h3>
 				</div>
-				
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li>
-							 <a href="/weddingpic">婚纱照</a>
-						</li>
-						<li>
-							 <a href="/proposing">求婚</a>
-						</li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							 <a href="#">日常</a>
-						</li>
-						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">计划<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									 <a href="#">婚礼费用预算</a>
-								</li>
-								<li>
-									 <a href="#">婚礼流程清单</a>
-								</li>
-								<li>
-									 <a href="#">婚礼当天流程</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									 <a href="#">帮助</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				
-			</nav>
+			</div>
 		</div>
-	</div>
-</div>
- <div class="container bg-danger">
-	<div class="row clearfix">
-		<div class="col-md-6 column">
-			<div class="jumbotron">
-				<h1>
+		<div class="col-xs-7 col-md-4 column" >
+			<div class="jumbotron bg-danger">
+				<h2>
 					我们结婚了!
-				</h1>
+				</h2>
 				
 				<p>
 					那一年，我们偶然相遇
@@ -100,22 +61,23 @@
 					期望快乐的回忆里，有您的参与
 				</p>
 				<p>
-					<a class="btn btn-primary btn-large" href="/">参与</a>
-				</p>
-			</div>
-			<div class="jumbotron">
-				<p>
-					梁智颖&邹佳丽
-				</p>
-				<p>
-					 华夏大酒店
-				</p>
-				<p>
-					 2015年10月2日 
+					<form class="form-inline">
+						<div class="form-group">
+							<p>
+					    		<label class="sr-only" for="msg">msg</label>
+					   			<input type="text" class="form-control" id="msg" placeholder="祝福语" >
+							</p>
+							<p class="text-right">
+								<label class="sr-only" for="name">name</label>
+					   			<input type="text" class="form-control" id="name" placeholder="姓名">
+					 			<button type="submit" class="btn btn-default">祝福</button>
+							</p>
+						</div>	
+					</form>
 				</p>
 			</div>
 		</div>
-		<div class="col-md-6 column">
+		<div class="col-xs-6 col-md-3 column">
 			<div class="jumbotron">
 			</div>
 		</div>

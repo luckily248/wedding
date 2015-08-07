@@ -8,10 +8,15 @@ type MainController struct {
 	beego.Controller
 }
 
+func (c *MainController) Post() {
+	c.TplNames = "index.tpl"
+}
+
 func (c *MainController) Get() {
 
 	c.TplNames = "index.tpl"
 }
+
 type WeddingpicController struct {
 	beego.Controller
 }
@@ -19,6 +24,7 @@ type WeddingpicController struct {
 func (c *WeddingpicController) Get() {
 	c.TplNames = "weddingpic.tpl"
 }
+
 type ProposingController struct {
 	beego.Controller
 }
