@@ -61,7 +61,7 @@
 					期望快乐的回忆里，有您的参与
 				</p>
 				<p>
-					<form class="form-inline">
+					<form class="form-inline" href="/">
 						<div class="form-group">
 							<p>
 					    		<label class="sr-only" for="msg">msg</label>
