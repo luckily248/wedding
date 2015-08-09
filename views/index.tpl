@@ -78,7 +78,17 @@
 			</div>
 		</div>
 		<div class="col-xs-6 col-md-3 column">
-			<div class="jumbotron">
+			<div class="table-responsive">
+			  <table class="table table-hover">
+				{{range $k,$v:=.}}
+			  	<tr>
+					<p>{{$v.Msg}}
+					</p>
+					<p>	-{{$v.Name}}
+					</p>
+				</tr>
+				{{end}}
+			  </table>
 			</div>
 		</div>
 	</div>
