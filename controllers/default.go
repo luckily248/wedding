@@ -12,7 +12,7 @@ type MainController struct {
 
 func (c *MainController) Post() {
 	message:=&Message{}
-	err:=c.ParseForm(&message)
+	err:=c.ParseForm(message)
 	if err!=nil{
 		fmt.Printf("parseform err:%s\n",err.Error())
 		c.Ctx.Output.Status=404

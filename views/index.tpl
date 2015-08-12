@@ -10,24 +10,7 @@
 			<img src="./static/img/heart2.jpg" class="img-thumbnail img-responsive" alt="Responsive image">
 			</img>
 			<div class="bg-danger">
-				<img class="img-responsive img-thumbnail" alt="" src="./static/img/heart.jpg" />
-				<div class="carousel-caption">
-				<h3 class="text-center text-danger">
-					梁智颖&邹佳丽
-				</h23>
-				<h3 class="text-center text-danger">
-					 华夏大酒店
-				</h3>
-				<p>
-					               
-				</p>
-				<h3 class="text-left text-muted">
-					 2015年10月2日 
-				</h3>
-				<h3 class="text-left text-muted">
-					 6:00
-				</h3>
-				</div>
+				<img class="img-responsive img-thumbnail" alt="" src="./static/img/heartcontent.jpg" />
 			</div>
 		</div>
 		<div class="col-xs-7 col-md-4 column" >
@@ -61,31 +44,38 @@
 					期望快乐的回忆里，有您的参与
 				</p>
 				<p>
-					<form class="form-inline" href="/">
+					<form class="form-inline" action="/" method="post">
 						<div class="form-group">
 							<p>
 					    		<label class="sr-only" for="msg">msg</label>
-					   			<input type="text" class="form-control" id="msg" placeholder="祝福语" >
+					   			<input type="text" class="form-control" name="msg" placeholder="祝福语" >
 							</p>
+						</div>
+						<div class="form-group">
 							<p class="text-right">
 								<label class="sr-only" for="name">name</label>
-					   			<input type="text" class="form-control" id="name" placeholder="姓名">
-					 			<button type="submit" class="btn btn-default">祝福</button>
+					   			<input type="text" class="form-control" name="name" placeholder="姓名">
 							</p>
 						</div>	
+						<button type="submit" class="btn btn-default">祝福</button>
 					</form>
 				</p>
 			</div>
 		</div>
 		<div class="col-xs-6 col-md-3 column">
-			<div class="table-responsive">
-			  <table class="table table-hover">
-				{{range $k,$v:=.}}
-			  	<tr>
-					<p>{{$v.Msg}}
-					</p>
-					<p>	-{{$v.Name}}
-					</p>
+			<div class="bg-danger">
+				<img class="img-responsive img-thumbnail" alt="" src="./static/img/love.jpg" />
+			</div>
+			<div class="table panel">
+			  <table class="table table-hover table-striped table-bordered">
+				{{range $k,$v:=.messages}}
+			  	<tr class="danger">
+					<td class="danger">
+						<p>{{$v.Message}}
+						</p>
+						<p class="text-right">	-{{$v.Name}}
+						</p>
+					</td>
 				</tr>
 				{{end}}
 			  </table>
