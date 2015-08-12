@@ -15,34 +15,48 @@
 		</div>
 		<div class="col-xs-7 col-md-4 column" >
 			<div class="jumbotron bg-danger">
-				<h2>
+				<h4>
 					我们结婚了!
-				</h2>
-				
-				<p>
-					那一年，我们偶然相遇
-				</p>
-				<p>
-					没想到世界这么大
-				</p>
-				<p>
-					两颗小小的心却从此被系在一起
-				</p>
-				<p>
-					我们看到彼此的好
-				</p>
-				<p>
-					也看到彼此对自己的重要
-				</p>
-				<p>
+				</h4>
+				<h5>
+					相遇 相识
+				</h5>
+				<h5>
+					相知 相爱
+				</h5>
+				<h5>
+					一次邂逅
+				</h5>
+				<h5>
+					一生相伴
+				</h5>
+				<h5>
+					我说 激情似火
+				</h5>
+				<h5>
+					你说 细水长流
+				</h5>
+				<h5>
+					就这样
+				</h5>
+				<h5>
+					我们决定
+				</h5>
+				<h5>
+					执子之手
+				</h5>
+				<h5>
+					与子偕老
+				</h5>
+				<h5>
 					在这个美丽的日子
-				</p>
-				<p>
+				</h5>
+				<h5>
 					我们决定让幸福延续
-				</p>
-				<p>
+				</h5>
+				<h5>
 					期望快乐的回忆里，有您的参与
-				</p>
+				</h5>	
 				<p>
 					<form class="form-inline" action="/" method="post">
 						<div class="form-group">
@@ -90,4 +104,35 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="static/js/bootstrap.min.js"></script>
 	<script src="static/js/eldarion-ajax.min.js"></script>
+	<script type="text/javascript" src="static/js/bootstrapValidator.min.js"></script>
+	<script type="text/javascript" src="static/js/language/zh_CN.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('.form-inline').bootstrapValidator({
+		        message: '信息错误',
+		        feedbackIcons: {
+		            valid: 'glyphicon glyphicon-ok',
+		            invalid: 'glyphicon glyphicon-remove',
+		            validating: 'glyphicon glyphicon-refresh'
+		        },
+		        fields: {
+		            name: {
+		                message: '名字格式不正确',
+		                validators: {
+		                    notEmpty: {
+		                        message: '请留下名字'
+		                    }
+		                }
+		            },
+		            msg: {
+		                validators: {
+		                    notEmpty: {
+		                        message: '请留下祝福留言'
+		                    }
+		                }
+		            }
+		        }
+		    });
+		});
+	</script>
 </html>
