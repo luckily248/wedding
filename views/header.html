@@ -27,16 +27,16 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							 <a href="#">日常</a>
+							 <a href="/nomalpic">日常</a>
 						</li>
 						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">计划<strong class="caret"></strong></a>
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">幕后花絮<strong class="caret"></strong></a>
 							<ul class="dropdown-menu">
 								<li>
-									 <a href="#">婚礼费用预算</a>
+									 <a href="#" data-toggle="modal" data-target="#expense" >婚礼费用预算</a>
 								</li>
 								<li>
-									 <a href="#">婚礼流程清单</a>
+									 <a href="#" data-toggle="modal" data-target="#process">婚礼流程清单</a>
 								</li>
 								<li>
 									 <a href="#">婚礼当天流程</a>
@@ -44,15 +44,50 @@
 								<li class="divider">
 								</li>
 								<li>
-									 <a href="#">联系方式</a>
+									 <a href="#">帮助</a>
 								</li>
 							</ul>
 						</li>
 					</ul>
 				</div>
-				
 			</nav>
 		</div>
 	</div>
+</div>
+<div class="modal fade" id="expense" tabindex="-1" role="dialog" aria-labelledby="expense_title">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="expense_title">婚礼费用预算</h4>
+      </div>
+      <div class="modal-body">
+      	<div class="embed-responsive embed-responsive-16by9" id="content">
+		  <iframe class="embed-responsive-item" src="static\plan\expense.htm"></iframe>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="process" tabindex="-1" role="dialog" aria-labelledby="process_title">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="process_title">婚礼流程清单</h4>
+      </div>
+      <div class="modal-body">
+      	<div class="embed-responsive embed-responsive-16by9" id="content">
+		  <iframe class="embed-responsive-item" src="static\plan\process.htm"></iframe>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 </head>

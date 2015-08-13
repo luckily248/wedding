@@ -47,15 +47,6 @@
 				</h5>
 				<h5>
 					与子偕老
-				</h5>
-				<h5>
-					在这个美丽的日子
-				</h5>
-				<h5>
-					我们决定让幸福延续
-				</h5>
-				<h5>
-					期望快乐的回忆里，有您的参与
 				</h5>	
 				<p>
 					<form class="form-inline" action="/" method="post">
@@ -70,8 +61,10 @@
 								<label class="sr-only" for="name">name</label>
 					   			<input type="text" class="form-control" name="name" placeholder="姓名">
 							</p>
-						</div>	
-						<button type="submit" class="btn btn-default">祝福</button>
+						</div>
+						<p>	
+							<button type="submit" class="btn btn-default">祝福</button>
+						</p>
 					</form>
 				</p>
 			</div>

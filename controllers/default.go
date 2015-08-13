@@ -62,3 +62,11 @@ type ProposingController struct {
 func (c *ProposingController) Get() {
 	c.TplNames = "proposing.tpl"
 }
+
+type NomalpicController struct{
+	beego.Controller
+}
+
+func (c *NomalpicController) Get(){
+	c.TplNames="nomalpic.tpl"
+}
